@@ -5,7 +5,8 @@ on:
     types: [opened, synchronize]
 
   jobs:
-    linter: runs-on: ubuntu-latest
+    linter: 
+    runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3
       # Runs install command
