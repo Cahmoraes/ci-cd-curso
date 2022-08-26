@@ -8,11 +8,9 @@ on:
     linter: runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3
-      
       # Runs install command
       - name: Run Installation
         run: yarn install
-      
       # Runs linter command
       - name: Run linter
         run: yarn lint
