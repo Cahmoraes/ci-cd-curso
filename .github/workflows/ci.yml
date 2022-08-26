@@ -4,14 +4,14 @@ on:
   pull_request:
     types: [opened, synchronize]
 
-  jobs:
-    linter: 
-    runs-on: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v3
-      # Runs install command
-      - name: Run Installation
-        run: yarn install
-      # Runs linter command
-      - name: Run linter
-        run: yarn lint
+jobs:
+  linter: 
+  runs-on: ubuntu-latest
+  steps: 
+    - uses: actions/checkout@v3
+    # Runs install command
+    - name: Run Installation
+      run: yarn install
+    # Runs linter command
+    - name: Run linter
+      run: yarn lint
